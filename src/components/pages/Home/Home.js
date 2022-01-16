@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BackHomeStyle, TopStyle, InLiveMembersWrapperStyle } from 'components/pages/Home/Home.style';
+import { BackHomeStyle, TopStyle, InLiveMembersWrapperStyle, DividerStyle } from 'components/pages/Home/Home.style';
 import Header from 'components/parts/Header/Header';
 import PlayerDescription from 'components/parts/PlayerDescription/PlayerDescription';
+import Footer from 'components/parts/Footer/Footer';
 import { players } from 'datas/players.js'
 
 function Home() {
@@ -17,6 +18,8 @@ function Home() {
           )
         })}
       </InLiveMembersWrapper>
+      <Divider />
+      <Footer />
     </BackHome>
   );
 }
@@ -24,5 +27,6 @@ function Home() {
 const BackHome = styled.div`${BackHomeStyle};`;
 const Top = styled.div`${TopStyle};`;
 const InLiveMembersWrapper = styled.div`${InLiveMembersWrapperStyle};`;
+const Divider = styled.div`${DividerStyle};`;
 
 export default Home;

@@ -1,5 +1,5 @@
 import { css } from 'styled-components'
-import { WhiteText, black, test } from 'foundation/colors'
+import { WhiteText, black, grey30 } from 'foundation/colors'
 import { pxToRem, py, mb, mr } from 'foundation/scalings'
 import { TitleXXL } from 'foundation/font/font'
 import BackPlayer from 'assets/back3.png'
@@ -10,19 +10,21 @@ export const PlayerDescriptionWrapperStyle = css`
   align-items: center;
   justify-content: space-between;
   height: ${pxToRem(500)};
-  background-color: hsl(${test});
   background-image: linear-gradient(to bottom, hsla(${black}, .5), hsla(${black}, .5)), url(${BackPlayer});
   background-position: center;
   border-radius: ${pxToRem(50)};
-  ${py(6)};
   & > *:not(:last-child) {
     ${mb(4)};
+  };
+  &:hover {
+    border: ${pxToRem(2)} solid hsl(${grey30});
   }
+  ${py(6)};
   ${mb(4)};
 `
 
 export const PlayerDescriptionImgStyle = css`
-  height: ${pxToRem(300)};
+  height: ${pxToRem(250)};
 `
 
 export const PlayerDescriptionPagesStyle = css`
