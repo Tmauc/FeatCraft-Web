@@ -1,5 +1,5 @@
 import { css } from 'styled-components'
-import { black, WhiteText } from 'foundation/colors'
+import { black, DisabledText, WhiteText } from 'foundation/colors'
 import { pxToRem, pyx, mx, mr } from 'foundation/scalings'
 import { TitleXL } from 'foundation/font/font'
 
@@ -32,9 +32,17 @@ export const HeaderLinkStyle = css`
   ${TitleXL()};
   color: hsl(${WhiteText});
   text-decoration: none;
-  cursor: pointer;
+  cursor: ${p => p.disabled ? 'not-allowed' : 'pointer'};
+  
+  ${p => {
+    if (p.disabled) {
+      return `
+        color: hsla(${DisabledText}, 0.5);
+      `
+    }
+  }};
 
-  &:hover {
+  &:hover:enabled {
     color: hsla(${WhiteText}, .7);
   }
 `

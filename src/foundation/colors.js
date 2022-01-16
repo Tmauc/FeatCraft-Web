@@ -2,7 +2,7 @@
 /* Text Colors */
 export const PrimaryText = "";
 export const SecondaryText = "";
-export const DisabledText = "";
+export const DisabledText = "214, 20%, 93%";
 export const WhiteText = "0, 0%, 100%";
 
 /* Main Colors */

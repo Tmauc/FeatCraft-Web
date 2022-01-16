@@ -8,14 +8,14 @@ function Header() {
     <HeaderWrapper>
       <HeaderPages>
         <HeaderLink href="#players">Membres</HeaderLink>
-        <HeaderLink href="#">Lives</HeaderLink>
-        <HeaderLink href="#">Vidéos</HeaderLink>
+        <HeaderLink disabled={true} href="#">Lives</HeaderLink>
+        <HeaderLink disabled={true} href="#">Vidéos</HeaderLink>
       </HeaderPages>
       <HeaderLogo src={Logo}></HeaderLogo>
       <HeaderPages>
-        <HeaderLink href="#">Infos</HeaderLink>
-        <HeaderLink href="#">Téléchargement</HeaderLink>
-        <HeaderLink href="#">Contact</HeaderLink>
+        <HeaderLink disabled={true} href="#">Infos</HeaderLink>
+        <HeaderLink disabled={true} href="#">Téléchargement</HeaderLink>
+        <HeaderLink disabled={true} href="#">Contact</HeaderLink>
       </HeaderPages>
     </HeaderWrapper>
   );
