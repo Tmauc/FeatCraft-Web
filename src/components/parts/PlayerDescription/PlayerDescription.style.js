@@ -28,7 +28,8 @@ export const PlayerDescWrapperStyle = css`
   background-image: url(${p => getBackground(p.randomBackground)});
   background-position: center;
   background-size: cover;
-  border-radius: ${pxToRem(50)};
+  background-repeat: no-repeat;
+  border-radius: ${pxToRem(16)};
   border: ${pxToRem(2)} solid hsla(${grey30}, 0);
   
   & > *:not(:last-child) {
@@ -37,7 +38,7 @@ export const PlayerDescWrapperStyle = css`
   &:hover {
     border-color: hsl(${grey30});
   }
-  ${py(6)};
+  ${py(3)};
   ${mb(4)};
 `
 
