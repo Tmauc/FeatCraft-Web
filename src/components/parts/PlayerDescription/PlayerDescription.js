@@ -5,8 +5,9 @@ import Button from 'components/parts/Button/Button';
 import { YoutubeColor, TwitchColor } from 'foundation/colors';
 
 function PlayerDescription(props) {
+  const randomBackground = Math.floor(Math.random() * 3) + 1;
   return (
-    <PlayerDescriptionWrapper>
+    <PlayerDescriptionWrapper randomBackground={randomBackground}>
       <PlayerDescriptionPseudo>{props.player.pseudo}</PlayerDescriptionPseudo>
       <PlayerDescriptionImg src={props.player.skin}></PlayerDescriptionImg>
       <PlayerDescriptionPages>

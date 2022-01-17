@@ -13,6 +13,7 @@ import piedpiedd from 'assets/Skins/piedpiedd-skin.png';
 import PomPidou6 from 'assets/Skins/PomPidou6-skin.png';
 import Ragner20 from 'assets/Skins/Ragner20-skin.png';
 import Rose_Machoc from 'assets/Skins/Rose_Machoc-skin.png';
+import Skay_lh from 'assets/Skins/Skay_lh-skin.png';
 import Zahakc from 'assets/Skins/Zahakc-skin.png';
 
 export const players = [
@@ -99,6 +100,12 @@ export const players = [
     twitch: "https://www.twitch.tv/captaineaurose",
     youtube: "https://www.youtube.com/channel/UCYxIVmWbEahrlKTkuA4wvSQ/videos",
     skin: Rose_Machoc
+  },
+  {
+    pseudo: "Skay_lh",
+    twitch: "",
+    youtube: "",
+    skin: Skay_lh
   },
   {
     pseudo: "Zahakc",
