@@ -1,6 +1,6 @@
 import { css } from 'styled-components'
 import { black, WhiteBg } from 'foundation/colors'
-import { pxToRem, py } from 'foundation/scalings'
+import { pxToRem, pyx } from 'foundation/scalings'
 import FeatCraftBanner from 'assets/FeatCraft_Banner.png'
 
 export const BackHomeStyle = css`
@@ -19,13 +19,15 @@ export const TopStyle = css`
 export const InLiveMembersWrapperStyle = css`
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(4, minmax(${pxToRem(100)}, ${pxToRem(280)}));
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(${pxToRem(100)}, auto);
+  gap: 1em;
   column-gap: 2rem;
   min-height: 100vh;
   width: 100%;
   background-color: hsl(${black});
   box-shadow: ${pxToRem(1)} ${pxToRem(0)} ${pxToRem(24)} ${pxToRem(27)} hsl(${black});
-  ${py(2)}
+  ${pyx(2, 2)}
 `
 export const DividerStyle = css`
   align-self: center;

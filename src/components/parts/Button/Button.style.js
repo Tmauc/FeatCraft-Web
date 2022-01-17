@@ -10,6 +10,7 @@ export const ButtonWrapperStyle = css`
   background-color: hsl(${p => p.backColor});
   border-radius: ${pxToRem(20)};
   border: 0;
+  width: ${pxToRem(150)};
   cursor: pointer;
   ${pyx(1, 2)};
 `

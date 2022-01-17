@@ -19,38 +19,43 @@ const getBackground = (randomBackground) => {
   }
 }
 
-export const PlayerDescriptionWrapperStyle = css`
+export const PlayerDescWrapperStyle = css`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: ${pxToRem(500)};
-  background-image: linear-gradient(to bottom, hsla(${black}, .5), hsla(${black}, .3)), url(${p => getBackground(p.randomBackground)});
+
+  background-image: url(${p => getBackground(p.randomBackground)});
   background-position: center;
   background-size: cover;
   border-radius: ${pxToRem(50)};
+  border: ${pxToRem(2)} solid hsla(${grey30}, 0);
+  
   & > *:not(:last-child) {
     ${mb(4)};
   };
   &:hover {
-    border: ${pxToRem(2)} solid hsl(${grey30});
+    border-color: hsl(${grey30});
   }
   ${py(6)};
   ${mb(4)};
 `
 
-export const PlayerDescriptionImgStyle = css`
+export const PlayerDescImgStyle = css`
   height: ${pxToRem(250)};
 `
 
-export const PlayerDescriptionPagesStyle = css`
+export const PlayerDescButtonsWrapperStyle = css`
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   & > *:not(:last-child) {
-    ${mr(4)}
-  }
+    ${mb(1)};
+  };
 `
 
-export const PlayerDescriptionPseudoStyle = css`
+export const PlayerDescPseudoStyle = css`
   ${TitleXXL()};
   color: hsl(${WhiteText});
 `

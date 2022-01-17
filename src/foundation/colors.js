@@ -35,3 +35,5 @@ export const purple90 = "292, 75%, 10%";
 /* Social Color */
 export const YoutubeColor = "0, 100%, 50%";
 export const TwitchColor = "261, 43%, 45%";
+export const DiscordColor = "235, 86%, 65%";
+export const TwitterColor = "197, 100%, 47%";
