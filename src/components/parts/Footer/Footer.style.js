@@ -6,11 +6,14 @@ import { LabelS, LabelM, LabelL } from 'foundation/font/font'
 export const FooterWrapperStyle = css`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   height: ${pxToRem(100)};
   width: 100vw;
   background-color: hsla(${black}, 1);
-  ${pyx(2, 20)};
+  ${pyx(2, 1)};
+  & > *:not(:last-child) {
+    ${mr(5)}
+  }
 `
 
 export const FooterLeftStyle = css`

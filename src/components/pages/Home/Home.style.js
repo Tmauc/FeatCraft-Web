@@ -1,6 +1,7 @@
 import { css } from 'styled-components'
 import { black, WhiteBg } from 'foundation/colors'
 import { pxToRem, pyx } from 'foundation/scalings'
+import { device } from 'foundation/deviceSize'
 import FeatCraftBanner from 'assets/FeatCraft_Banner.png'
 
 export const BackHomeStyle = css`
@@ -28,6 +29,9 @@ export const InLiveMembersWrapperStyle = css`
   background-color: hsl(${black});
   box-shadow: ${pxToRem(1)} ${pxToRem(0)} ${pxToRem(24)} ${pxToRem(27)} hsl(${black});
   ${pyx(2, 2)}
+  @media ${device.mobile} {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `
 export const DividerStyle = css`
   align-self: center;

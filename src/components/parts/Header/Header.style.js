@@ -6,14 +6,14 @@ import { TitleXL } from 'foundation/font/font'
 export const HeaderWrapperStyle = css`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   height: ${pxToRem(100)};
   width: 100vw;
   background-color: hsla(${black}, .6);
   border: 0;
   position: sticky;
   top: 0;
-  ${pyx(2, 20)};
+  ${pyx(2, 2)};
 `
 
 export const HeaderLogoStyle = css`
