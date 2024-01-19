@@ -2,7 +2,7 @@ import { css } from 'styled-components'
 import { black, WhiteBg } from 'foundation/colors'
 import { pxToRem, pyx } from 'foundation/scalings'
 import { device } from 'foundation/deviceSize'
-import FeatCraftBanner from 'assets/FeatCraft_Banner.png'
+import FeatCraftBanner from 'assets/FeatCraft_banner.png'
 
 export const BackHomeStyle = css`
   background-image: url(${FeatCraftBanner});
